@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Marissa Zimmer" />
+
+
+<title>How landscape habitat influences Wild Eastern Turkey Populations within New York State</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Spatial Data Science Final Project</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">How landscape habitat influences Wild Eastern Turkey Populations within New York State</h1>
+<h4 class="author">Marissa Zimmer</h4>
+
+</div>
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>New York State’s (NYS) wild turkey population constitutes a significant part of conservation concerns and support for the hunting community within NYS. In the early 1950s, the Department of Conservation (NYSDEC) helped restore and repopulate NYS wild turkey populations. The NYSDEC had also partnered with the National Wild Turkey Federation and SUNY Environmental Science and Forestry college in 2010 to research the impact of weather patterns and hunting zones on turkey populations. The results of this study have not been published at this time.</p>
+<p>The aim of this project is to research, gather and compare data that involves understanding and explaining how land cover, tree canopy cover, elevation and precipitation can effect wild turkey population levels. Within NYS, many individuals have noticed seeing less wild turkeys than in years past and changing habitat factors in localized areas may be one factor effecting population levels. By looking at these environmental variables the aim of this project is to see if areas with less suitable environmental variables correlate to areas of lower population levels. If the results of this study come back to support this hypothesis then there is room for continued research into habitat suitability within NYS for wild turkey populations.</p>
+</div>
+<div id="materials-and-methods" class="section level1">
+<h1>Materials and methods</h1>
+<p>For this project it was important to highlight the key environmental variables that effect wild turkey populations within New York State. Two of the environmental variables that were used, landcover and elevation were taken from the U.S. Geological Survey (USGS). Specifically, the data is a global digital elevation model (DEM) with a horizontal grid spacing of 30 arc seconds (approximately 1 kilometer) from several raster and vector sources of information. The USGS separated the data into tiles on a world map which can be selected by individual tile. The data for elevation was completed in 1996 and was developed over a three year period. For this project I was able to select a grid tile that included NY.</p>
+<p>The next environmental variable that was chosen for this project was Tree canopy cover from the Global Land Analysis &amp; Discovery. The global tree cover data is obtained from per pixel estimates of the 2010 percent maximum (peak growing season) tree canopy cover which comes from cloud-free annual growing season composite Land set 7 ETM + data. A median was taken from the annual tree canopy cover values from the years 2009-2011. Like the Land cover and elevation data the tree cover canopy data was chosen from a grid style map with a spatial resolution of 1 arc-second per pixel, approximately 30 m per pixel.</p>
+<p>The last environmental variable, precipitation was taken from the PRISM Climate Group from Oregon State University. I selected the temporal period of May, 2020. The month of May was chosen based on wild eastern Turkeys breeding and nesting times. During the month of May their breeding and nesting behaviors peak.</p>
+</div>
+<div id="step-1-loading-the-required-packages" class="section level1">
+<h1>Step 1: Loading the required packages</h1>
+<pre class="r"><code>library(raster)
+library(sf)
+library(tigris)
+library(rasterVis)
+library(rgdal)
+library(dismo)
+library(ggplot2)
+library(viridis)
+
+
+# cache the results for quick compiling
+options(tigris_use_cache = TRUE)</code></pre>
+</div>
+<div id="step-2-the-data" class="section level1">
+<h1>Step 2: The Data</h1>
+<pre class="r"><code>ebird_data &lt;-read.csv(file = &quot;C:/Users/maris/OneDrive/Desktop/maxent_turkey3.csv&quot;)
+
+#Landcover from Dr. Williams 
+land_cover = raster (&quot;C:/USers/maris/OneDrive/Desktop/Environmental Factor for Turkey Project/landcover_crop.asc&quot;)
+crs(land_cover)=4326
+
+
+#Treecover from Global Forest Watch
+tree_cover = raster(&quot;C:/USers/maris/OneDrive/Desktop/Environmental Factor for Turkey Project/Hansen_GFC-2019-v1.7_treecover2000_50N_080W.tif&quot;)
+
+
+#Precipitation data from PRISM 
+precip_cover = raster(&quot;C:/USers/maris/OneDrive/Desktop/Environmental Factor for Turkey Project/PRISM_ppt_stable_4kmM3_2020_asc.asc&quot;)
+crs(precip_cover)=4326
+
+
+#Elevation data from Dr. Williams 
+elevation_cover = raster (&quot;C:/Users/maris/OneDrive/Desktop/Environmental Factor for Turkey Project/elevation.tif&quot;)</code></pre>
+<p>let’s take a quick look at all four environmental layers</p>
+<pre class="r"><code>land_cover</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 9119, 12478, 113786882  (nrow, ncol, ncell)
+## resolution : 0.004166667, 0.004166667  (x, y)
+## extent     : -113, -61.00833, 20.00833, 58.00417  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : landcover_crop.asc 
+## names      : landcover_crop</code></pre>
+<pre class="r"><code>tree_cover</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 40000, 40000, 1.6e+09  (nrow, ncol, ncell)
+## resolution : 0.00025, 0.00025  (x, y)
+## extent     : -80, -70, 40, 50  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : Hansen_GFC-2019-v1.7_treecover2000_50N_080W.tif 
+## names      : Hansen_GFC.2019.v1.7_treecover2000_50N_080W 
+## values     : 0, 255  (min, max)</code></pre>
+<pre class="r"><code>precip_cover</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 621, 1405, 872505  (nrow, ncol, ncell)
+## resolution : 0.04166667, 0.04166667  (x, y)
+## extent     : -125.0208, -66.47917, 24.0625, 49.9375  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : PRISM_ppt_stable_4kmM3_2020_asc.asc 
+## names      : PRISM_ppt_stable_4kmM3_2020_asc</code></pre>
+<pre class="r"><code>elevation_cover</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 12000, 9600, 115200000  (nrow, ncol, ncell)
+## resolution : 0.008333333, 0.008333333  (x, y)
+## extent     : -140, -60, -10, 90  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : elevation.tif 
+## names      : elevation 
+## values     : -79, 6710  (min, max)</code></pre>
+<p>Now we need to make all the layers talk to each other. I chose to have each layer contain the same properties as the land cover data.</p>
+<pre class="r"><code>ny_counties &lt;-counties(state = &quot;NY&quot;, cb = FALSE,
+                       resolution = &quot;500k&quot;, year = 2020) %&gt;%
+                        st_union() %&gt;%
+                         st_transform(crs=projection(land_cover))
+#landcover 
+
+land_coverny= crop(land_cover, as(ny_counties, &quot;Spatial&quot;))
+
+#treecover
+
+tree_coverny = crop(tree_cover, 
+                    as(st_transform(ny_counties,st_crs(tree_cover)), &quot;Spatial&quot;))#%&gt;%
+
+tree_coverny2 = projectRaster(tree_coverny, to=land_coverny,method=&quot;ngb&quot;)
+
+#elevation 
+elevation_coverny= crop(elevation_cover,
+                   as(st_transform(ny_counties,st_crs(elevation_cover)), &quot;Spatial&quot;))#%&gt;%
+
+elevation_coverny2 = projectRaster(elevation_coverny,to=land_coverny, method = &quot;ngb&quot;)
+
+#precipitation
+precip_coverny = crop(precip_cover, 
+                      as(st_transform(ny_counties,st_crs(precip_cover)), &quot;Spatial&quot;))#%&gt;%
+
+precip_coverny2 = projectRaster(precip_cover, to=land_coverny,method=&quot;ngb&quot;)
+
+#extent time
+
+extent_1 = extent(land_coverny)
+precip_cover = crop(precip_cover, extent_1)
+tree_coverny2 = crop(tree_coverny2, extent_1)
+elevation_coverny2 = crop(elevation_coverny2, extent_1)</code></pre>
+<p>Let’s relook at all of the environmental layers and make sure they match:</p>
+<pre class="r"><code>land_coverny</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 1090, 1916, 2088440  (nrow, ncol, ncell)
+## resolution : 0.004166667, 0.004166667  (x, y)
+## extent     : -79.7625, -71.77917, 40.475, 45.01667  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      : landcover_crop 
+## values     : 0, 16  (min, max)</code></pre>
+<pre class="r"><code>tree_coverny2</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 1090, 1916, 2088440  (nrow, ncol, ncell)
+## resolution : 0.004166667, 0.004166667  (x, y)
+## extent     : -79.7625, -71.77917, 40.475, 45.01667  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      : Hansen_GFC.2019.v1.7_treecover2000_50N_080W 
+## values     : 0, 100  (min, max)</code></pre>
+<pre class="r"><code>precip_coverny2</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 1090, 1916, 2088440  (nrow, ncol, ncell)
+## resolution : 0.004166667, 0.004166667  (x, y)
+## extent     : -79.7625, -71.77917, 40.475, 45.01667  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      : PRISM_ppt_stable_4kmM3_2020_asc 
+## values     : 643.24, 1809.52  (min, max)</code></pre>
+<pre class="r"><code>elevation_coverny2</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 1090, 1916, 2088440  (nrow, ncol, ncell)
+## resolution : 0.004166667, 0.004166667  (x, y)
+## extent     : -79.7625, -71.77917, 40.475, 45.01667  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      : elevation 
+## values     : 1, 1568  (min, max)</code></pre>
+<p>Let’s now check and see how each layer plots, including the ebird data.</p>
+<pre class="r"><code>plot(ebird_data)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>plot(land_coverny)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<pre class="r"><code>plot(tree_coverny2)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-6-3.png" width="672" /></p>
+<pre class="r"><code>plot(precip_coverny2)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-6-4.png" width="672" /></p>
+<pre class="r"><code>plot(elevation_coverny2)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-6-5.png" width="672" /></p>
+<p>Each layer (plot) is now able to stack onto each other, as shown below:</p>
+<pre class="r"><code>stack_1= stack(land_coverny,elevation_coverny2,tree_coverny2, precip_coverny2)%&gt;%
+  mask(mask=as(ny_counties, &quot;Spatial&quot;))</code></pre>
+</div>
+<div id="step-3" class="section level1">
+<h1>Step 3</h1>
+<pre class="r"><code>all_data &lt;-bioclim(stack_1, ebird_data)
+stack_1= stack(land_coverny,elevation_coverny2,tree_coverny2, precip_coverny2)%&gt;%
+  mask(mask=as(ny_counties, &quot;Spatial&quot;))
+e &lt;-extent(-79.7625, -71.77917, 40.475, 45.01667)
+
+data_predict &lt;-predict(all_data, stack_1, progess=&#39;text&#39;, ext=e)</code></pre>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>The first plot shows how each environmental layer is now properly cropped within NYS</p>
+<pre class="r"><code>plot(stack_1)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The Second plot combines all environmental variables and occurnace data taken from ebird</p>
+<pre class="r"><code>plot(data_predict)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>The third and final plot is a more defined version of the second plot.</p>
+<pre class="r"><code>gplot(data_predict) + geom_tile(aes(fill = value)) +
+  facet_wrap(~ variable) +
+  scale_fill_viridis(option=&quot;turbo&quot;) +
+  coord_equal()+ ylab(&quot;Latitude&quot;)+ xlab(&quot;Longitude&quot;)+ggtitle(&quot;How Environmental Variables effect Turkey populations within NYS&quot;)</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>The final map located above show how the four environmental variables that were chosen for this project effect wild turkey habitat suitability within NYS. It is clear from this map that there are distinct clustered areas of both low and high suitability. Many of the areas with higher suitability seem to be within the range of 0.4-0.6 with very little area within NYS with a suitability score of 0.8 and above. Looking at each individual environmental layer compared to the final map we can observe how areas of lower suitability correlate with areas of higher precipitation, elevation, and tree cover followed by the same areas having lower land cover results.</p>
+</div>
+<div id="conclusions" class="section level1">
+<h1>Conclusions</h1>
+<p>These four environmental layers were chosen as being the most influential environmental factors effecting wild turkey populations within NYS. Precipitation have been known to effect nest and poult survival during the breeding periods of wild turkeys. During the first two weeks of a poults life increased precipitation can be fatal for a poult. Tree cover is also an important factor when looking into habitat suitability as turkeys need to roost in a tree every night to stay away from nocturnal predators. Turkeys like to roost in pine trees during the Winter to help stay warm and, during the Spring time when their breeding season is in full swing, they prefer more open hardwoods to roost in. The third factor, land cover was important as turkeys need areas that combine many different land cover aspects within the same area. Turkeys need open areas to forage with an available food source, ideally open fields or crop fields. These open areas also double as areas where male gobblers can display their feathers during their breeding season to attract a hen. These open fields often are accompanied with nearby areas of secondary succession where the hens feel safe nesting on the ground. The fourth and final environmental layer that was chosen was elevation. Generally the elevation within NYS is the same for many parts with the exception of the Adirondack region and some other smaller areas within NYS. Turkeys prefer lower elevation as they need those different land cover aspects that were previously talked about. It is hard to find all those land cover aspects when you begin increasing elevation.</p>
+<p>This project is just the beginning at looking into why NYS wild turkey populations have began to lower over the recent years. From this project, results we can determine that areas of lower suitability correlate with higher precipitation, elevation, and tree cover followed by the same areas having lower land cover. More non-environmental variables are needed as the next step into looking at how they effect population levels. Some variables may include; hunting pressure, human disturbance and urban sprawl as possible factors that are also contributing to declining population levels.</p>
+<p>This project also provides evidence for future research and funding for habitat restoration for ground nesting birds. By focusing on areas with NYS with lower suitability and improving habitat restoration efforts not only will turkeys be able to reap the benefits but other ground nesting birds will like grouse and pheasant.</p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>Chamberlain, M. J., Cohen, B. S., Bakner, N. W., &amp; Collier, B. A. (2020). Behavior and Movement of Wild Turkey Broods. Journal of Wildlife Management, 84(6), 1139–1152. <a href="https://doi.org/10.1002/jwmg.21883" class="uri">https://doi.org/10.1002/jwmg.21883</a></p>
+<p>eBird. 2021. eBird: An online database of bird distribution and abundance [web application]. eBird, Cornell Lab of Ornithology, Ithaca, New York. Available: <a href="http://www.ebird.org" class="uri">http://www.ebird.org</a>. (Accessed: Date[October 30th, 2021]).</p>
+<p>Gerrits, A. P., Wightman, P. H., Cantrell, J. R., Ruth, C., Chamberlain, M. J., &amp; Collier, B. A. (2020). Movement Ecology of Spring Wild Turkey Hunters on Public Lands in South Carolina, USA. Wildlife Society Bulletin, 44(2), 260–270. <a href="https://doi.org/10.1002/wsb.1094" class="uri">https://doi.org/10.1002/wsb.1094</a></p>
+<p>“Global Forest Change 2000–2020data Download.” Global Forest Change, <a href="https://storage.googleapis.com/earthenginepartners-hansen/GFC-2020-v1.8/download.html" class="uri">https://storage.googleapis.com/earthenginepartners-hansen/GFC-2020-v1.8/download.html</a>.</p>
+<p>Madan, R. T., &amp; Change, P. (2015). Predictors of Wild Turkey ( Meleagris gallopavo ) Population Change in California from 1972 to 2013 Riva T. Madan. 1–42. Retrieved from <a href="https://nature.berkeley.edu/classes/es196/projects/2015final/MadanR_2015.pdf" class="uri">https://nature.berkeley.edu/classes/es196/projects/2015final/MadanR_2015.pdf</a></p>
+<p>PRISM Climate Group, Oregon State U. (n.d.). Prism.oregonstate.edu. <a href="https://prism.oregonstate.edu/recent/monthly.php" class="uri">https://prism.oregonstate.edu/recent/monthly.php</a></p>
+<p>State, N. Y., Sanford, R., Kurt, A., Jurczak, T., Kirsch, A., &amp; Parker, K. (2005). Wild Turkey Management Plan. (July), 1–43. Retrieved from <a href="https://www.dec.ny.gov/docs/wildlife_pdf/turkeyplan.pdf" class="uri">https://www.dec.ny.gov/docs/wildlife_pdf/turkeyplan.pdf</a></p>
+<p>The Sixth National Wild Turkey Symposium. (n.d.). Retrieved from <a href="https://www.fs.fed.us/nrs/pubs/other/1990/ne_1990_healy_001.pdf#page=192" class="uri">https://www.fs.fed.us/nrs/pubs/other/1990/ne_1990_healy_001.pdf#page=192</a></p>
+<p>USGS (1997) USGS 30 ARC-second Global Elevation Data, GTOPO30. (ed. C.a.I.S.L. Research Data Archive at the National Center for Atmospheric Research).</p>
+</div>
+
+<!-- give the footer some space -->
+<br/>
+<br/>
+
+<footer id="site-footer">
+  <div id="footer1">
+  This website is a project for Adam Wilson's <a href="https://wilsonlab.io/GEO511"><i> Spatial Data Science (GEO511) </i></a>Course at the University at Buffalo
+  </div>
+  <div id="footer2">
+  <a rel="license" property="http://creativecommons.org/ns#license"
+  href="http://creativecommons.org/licenses/by/4.0/" ><img src="img/cc-by.svg" alt="cc-by"/></a> 
+  </div>
+</footer>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>
